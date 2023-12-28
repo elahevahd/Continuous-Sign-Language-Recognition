@@ -1,4 +1,15 @@
 # Continuous-Sign-Language-Recognition
+### Implementation of '[Recognizing American Sign Language Nonmanual Signal Grammar Errors in Continuous Videos](https://arxiv.org/pdf/2005.00253.pdf)' (ICPR 2020)
+
+> **Recognizing American Sign Language Nonmanual Signal Grammar Errors in Continuous Videos**<br>
+> Elahe Vahdani, Longlong Jing, Yingli Tian, Matt Huenerfauth
+>
+> Paper: https://arxiv.org/pdf/2005.00253.pdf
+>
+> **Abstract:** *As part of the development of an educational tool that can help students achieve fluency in American Sign Language (ASL) through independent and interactive practice with immediate feedback, this paper introduces a near real-time system to recognize grammatical errors in continuous signing videos without necessarily identifying the entire sequence of signs. Our system automatically recognizes if a performance of ASL sentences contains grammatical errors made by ASL students. We first recognize the ASL grammatical elements including both manual gestures and nonmanual signals independently from multiple modalities (i.e. hand gestures, facial expressions, and head movements) by 3D-ResNet networks. Then the temporal boundaries of grammatical elements from different modalities are examined to detect ASL grammatical mistakes by using a sliding window-based approach. We have collected a dataset of continuous sign language, ASL-HW-RGBD, covering different aspects of ASL grammars for training and testing. Our system is able to recognize grammatical elements on ASL-HW-RGBD from manual gestures, facial expressions, and head movements and successfully detect 8 ASL grammatical mistakes.*
+
+
+
 STEP 0. Unzip "container.tar.gz". 
 
 STEP 1. Setting Docker environment. 
