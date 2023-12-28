@@ -10,9 +10,12 @@
 
 
 ### Setting Docker Environment
-1. The docker installation:  https://docs.docker.com/install/linux/docker-ce/ubuntu/
-2. The nvidia-docker installation: https://chunml.github.io/ChunML.github.io/project/Installing-NVIDIA-Docker-On-Ubuntu-16.04/ or https://github.com/NVIDIA/nvidia-docker
-3. Loading docker Images, run this commmand: sudo docker load --input ./NSF_LEARN_Docker.tar
+1. Docker installation:
+    https://docs.docker.com/install/linux/docker-ce/ubuntu/
+2. Nvidia-docker installation:
+    https://chunml.github.io/ChunML.github.io/project/Installing-NVIDIA-Docker-On-Ubuntu-16.04/ or https://github.com/NVIDIA/nvidia-docker
+3. Loading docker Images, run this commmand:
+    sudo docker load --input ./NSF_LEARN_Docker.tar
 4. Create a container using the following commands (3 GPUs are needed):
     sudo docker run -it --rm --runtime=nvidia -v /home/:/home/ --log-opt max-size=50m  -e NVIDIA_VISIBLE_DEVICE=0,1,2 cwaffles/openpose
     cd ./container/openpose 
